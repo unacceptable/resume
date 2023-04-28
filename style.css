@@ -9,7 +9,6 @@ body {
   color: #2c2c2c;
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
 }
 
 /* Headings */
@@ -36,26 +35,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Code and code blocks */
-pre, code {
-  font-family: 'Fira Code', 'Fira Mono', monospace;
-  font-size: 1em;
-}
-
-pre {
-  background-color: #f6f8fa;
-  border: 1px solid #e1e4e8;
-  border-radius: 4px;
-  padding: 1em;
-  overflow-x: auto;
-}
-
-code {
-  background-color: rgba(27,31,35,0.05);
-  border-radius: 3px;
-  padding: 0.2em 0.4em;
-}
-
 /* Lists */
 ul, ol {
   padding-left: 2em;
@@ -67,21 +46,4 @@ blockquote {
   border-left: 0.25em solid #dfe2e5;
   padding: 0 1em;
   margin: 0;
-}
-
-/* Tables */
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table th, table td {
-  text-align: left;
-  border: 1px solid #dfe2e5;
-  padding: 0.2em;
-}
-
-table th {
-  background-color: #f6f8fa;
-  font-weight: bold;
 }

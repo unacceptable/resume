@@ -1,22 +1,20 @@
-Robert Jackson
-==============
+# Robert Jackson
+## Contact
+**Email**: [robert@aztek.io](mailto:robert@aztek.io)<br/>
+**LinkedIn**: [robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/)<br/>
+**Phone**: [(406) 396-9048](tel:+1-406-396-9048)<br/>
+**GitHub**: [unacceptable](https://github.com/unacceptable)
 
-Social   | Contact                                                             | Code   | Link
--------- | ------------------------------------------------------------------  | ------ | ------------------------------------
-Email    | [robert@aztek.io](mailto:robert@aztek.io)                           | GitHub | [unacceptable](https://github.com/unacceptable)
-LinkedIn | [robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/) | GitLab | [aztek-io](https://gitlab.com/aztek-io)
+## Certifications
+**Kubernetes**: [Certified Kubernetes Administrator (CKA)](https://cdn.aztek.io/certs/CKA_Certificate.pdf)<br/>
+**AWS**: [AWS Certified Solutions Architect - Professional](https://cdn.aztek.io/certs/awsSolutionsArchitect_PE.pdf),
+ [AWS Certified DevOps Engineer - Professional](https://cdn.aztek.io/certs/awsDevOpsEngineer_PE.pdf),
+ [AWS Certified Solutions Architect - Associate](https://cdn.aztek.io/certs/awsSolutionsArchitect_AE.pdf),
+ [AWS Certified Developer - Associate](https://cdn.aztek.io/certs/awsCertifiedDeveloper_AE.pdf),
+ [AWS Certified SysOps Administrator - Associate](https://cdn.aztek.io/certs/awsSysOpsAdmin_AE.pdf)<br/>
+**General**: [Security+](https://cdn.aztek.io/certs/CompTIA_Security%2B.pdf)
 
-Certifications
---------------
-Advanced                                                                                                    | Intermediate
-----------------------------------------------------------------------------------------------------------  | --------------------------------------------------------------------------------------------------------------
-[Certified Kubernetes Administrator (CKA)](https://cdn.aztek.io/certs/CKA_Certificate.pdf)                  | [AWS Certified Solutions Architect - Associate](https://cdn.aztek.io/certs/awsSolutionsArchitect_AE.pdf)
-[AWS Certified Solutions Architect - Professional](https://cdn.aztek.io/certs/awsSolutionsArchitect_PE.pdf) | [AWS Certified Developer - Associate](https://cdn.aztek.io/certs/awsCertifiedDeveloper_AE.pdf)
-[AWS Certified DevOps Engineer - Professional](https://cdn.aztek.io/certs/awsDevOpsEngineer_PE.pdf)         | [AWS Certified SysOps Administrator - Associate](https://cdn.aztek.io/certs/awsSysOpsAdmin_AE.pdf)
-                                                                                                            | [Security+](https://cdn.aztek.io/certs/CompTIA_Security%2B.pdf)
-
-Professional Experience
------------------------
+## Professional Experience
 ### PDI Technologies - 2022 to present
 #### Site Reliability Engineering Manager
 * Led team during Koupon's acquisition by PDI, ensuring team members have necessary resources
@@ -70,16 +68,16 @@ Professional Experience
 * Recommended cost-reduction strategies, resulting in ~$15.7k+ monthly savings (ELK stack optimizations and Reserved Instances)
 * Developed AWS Lambda functions for automated reporting, infrastructure monitoring, and alert generation using the Python boto3 library
 
-Skills
-------
-Core DevOps Skills | Programming & Scripting | CI/CD Tools    | Cross-functional Skills     | Soft Skills
------------------- | ----------------------- | ------------   | -----------------------     | -----------------
-Kubernetes         | Bash & Shell            | Jenkins        | Containerization            | Leadership
-Helm               | Python                  | GitHub Actions | Troubleshooting & Debugging | Communication
-Ansible            | Go                      | GitLab CI      | Security & Compliance       | Collaboration
-Docker             | PowerShell              | Keptn          | API & Webhook Automation    | Problem Solving
-Terraform          |                         | Bamboo         | Virtualization              | Adaptability
-Packer             |                         |                | Infrastructure Monitoring   | Time Management
-AWS CloudFormation |                         |                | Cost Optimization           | Conflict Resolution
-Security Scanning  |                         |                | SCRUM Leader                |
+## Skills
+### Technical Skills:
+**Core DevOps Skills**: Kubernetes, Helm, Ansible, Docker, Terraform, Packer, AWS CloudFormation, Security Scanning<br/>
+**Programming & Scripting**: Python, Bash & Shell, PowerShell<br/>
+**CI/CD Tools**: Jenkins, GitHub Actions, GitLab CI, Keptn, Bamboo<br/>
+**Cross-functional Skills**: Containerization, Security & Compliance, API & Webhook Automation, Virtualization, Infrastructure Monitoring
 
+### Soft Skills:
+**Management & Team Building**: Servant Leadership, Communication, Collaboration, Conflict Resolution, Coaching<br/>
+**Problem Solving**: Troubleshooting, Debugging, Observability<br/>
+**Time management**: Kanban, Sprints (prefer Scrumban framework), Pomodoro Timers, Priortizing tasks & Backlog Refinement<br/>
+**SCRUM leadership**: Standup, Backlog Refinement, Deployment Retrospectives, Blameless Post Mortems<br/>
+**Business Value**: Cost Optimizations
