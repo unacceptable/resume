@@ -9,7 +9,10 @@ import os
 import markdown
 import pdfkit
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 def main():
     '''
@@ -21,7 +24,7 @@ def main():
 
     create_pdf(contents=html)
 
-    with open('resume.html', mode='w') as website:
+    with open('resume.html', mode='w', encoding='utf-8') as website:
         logging.info('Creating file %s (for website).', website.name)
         website.write(html)
 
@@ -33,7 +36,7 @@ def get_contents(filename):
         return file contents
     '''
     logging.info('Getting contents for %s', filename)
-    with open(filename) as f:
+    with open(filename, mode='r', encoding='utf-8') as f:
         contents = f.read()
     f.close()
 
@@ -64,7 +67,7 @@ def render_html(body, head='', css_filename='style.css'):
     return html
 
 
-def create_pdf(filename='Resume.pdf', contents=''):
+def create_pdf(contents, filename='Resume.pdf'):
     '''
         Creates a PDF
     '''
