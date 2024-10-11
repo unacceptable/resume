@@ -2,10 +2,10 @@
 
 ## Contact
 
-**Email**: [robert@aztek.io](mailto:robert@aztek.io)<br/> **LinkedIn**:
-[robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/)<br/>
-**GitHub**: [unacceptable](https://github.com/unacceptable)<br/> **Phone**:
-[406-396-9048](tel:4063969048)
+**Email**: [robert@aztek.io](mailto:robert@aztek.io)<br/>
+**LinkedIn**: [robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/)<br/>
+**Phone**: [406-396-9048](tel:4063969048)<br/>
+**GitHub**: [unacceptable](https://github.com/unacceptable)
 
 ## Certifications
 
