@@ -4,7 +4,6 @@
 
 **Email**: [robert@aztek.io](mailto:robert@aztek.io)<br/>
 **LinkedIn**: [robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/)<br/>
-**Phone**: [406-396-9048](tel:4063969048)<br/>
 **GitHub**: [unacceptable](https://github.com/unacceptable)
 
 ## Certifications
@@ -21,9 +20,7 @@
 
 ## Professional Experience
 
-### BackBox - 2023 to present
-
-#### Sr. DevOps Solutions Architect
+### BackBox - Sr. DevOps Solutions Architect - 2023 to present
 
 - Create Infrastructure as Code modules from scratch
 - Designed the infrastructure as Code strategy
@@ -35,9 +32,7 @@
 - Coordinated with marketing on customer sandbox trials
 - Oversaw the migration from Terraform to OpenTofu
 
-### PDI Technologies - 2022 to 2023
-
-#### Site Reliability Engineering Manager
+### PDI Technologies - Site Reliability Engineering Manager - 2022 to 2023
 
 - Led team during Koupon's acquisition by PDI, ensuring team members have
   necessary resources
@@ -62,9 +57,7 @@
 - Oversaw infrastructure accounting for 25% of total revenue with only 5% of the
   organizations total cloud spending
 
-### Koupon - 2021 to 2022
-
-#### Site Reliability Engineering Manager
+### Koupon - Site Reliability Engineering Manager - 2021 to 2022
 
 - Created a Status Page for internal and external stakeholders
 - Collaborated with Dev, QA, Security, and Data teams to identify workflow
@@ -77,9 +70,7 @@
 - Transitioned team to Helm orchestration with Helmfile and from IAM users with
   access keys to IAM role authentication using KIAM and Cross-Account Roles
 
-### Dell - 2018 to 2021
-
-#### DevOps Solutions Architect
+### Dell - DevOps Solutions Architect - 2018 to 2021
 
 - Served as Team Lead for Dell's Insights Platform SRE team, driving success and
   performance in a DevOps environment
@@ -98,9 +89,7 @@
 - Enhanced infrastructure stability through monitoring, anomaly detection, and
   service hotfix implementation
 
-### Alkami - 2017 to 2018
-
-#### Site Reliability Engineer
+### Alkami - Site Reliability Engineer - 2017 to 2018
 
 - Facilitated private cloud migrations from ARMOR Gen3 to ARMOR Gen4
 - Developed a custom CLI tool utilizing the ARMOR API, implemented in Python
@@ -114,9 +103,7 @@
 - Integrated webhooks to notify Slack channels of changes in JIRA (prior to the
   official server plugin) and Datadog
 
-### ARMOR | Firehost - 2015 to 2017
-
-#### Site Reliability Engineer
+### ARMOR (Firehost) - Site Reliability Engineer - 2015 to 2017
 
 - Provided guidance on best security practices for AWS services configuration,
   supporting ARMOR Anywhere infrastructure

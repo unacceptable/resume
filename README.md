@@ -29,5 +29,6 @@ docker build -t resume:local .
 ```bash
 docker run -it --name "resume-$(date +%F)" resume:local &&
     docker cp "resume-$(date +%F):/app/Resume.pdf" . &&
-    docker cp "resume-$(date +%F):/app/resume.html" .
+    docker cp "resume-$(date +%F):/app/resume.html" . &&
+    docker rm "resume-$(date +%F)"
 ```
