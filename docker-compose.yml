@@ -1,6 +1,7 @@
 services:
   resume:
     build: .
+    platform: linux/arm64  # Change to linux/amd64 for x86_64 systems
     volumes:
       - .:/app
     working_dir: /app

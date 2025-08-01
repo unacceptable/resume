@@ -28,11 +28,13 @@ docker compose up --build
 
 The generated files (`Resume.pdf` and `resume.html`) will be available in your local directory immediately thanks to volume mounting.
 
+> **Note:** The docker-compose.yml is set to `linux/arm64` by default. For AMD64/x86_64 systems, change the `platform` field in docker-compose.yml to `linux/amd64`.
+
 #### Docker CLI
 
 ```bash
 # Build the image
-docker build -t resume:local .
+docker buildx build --platform linux/amd64 -t resume:local .
 
 # Run and extract files
 docker run -it --name "resume-$(date +%F)" resume:local &&
@@ -40,6 +42,8 @@ docker run -it --name "resume-$(date +%F)" resume:local &&
     docker cp "resume-$(date +%F):/app/resume.html" . &&
     docker rm "resume-$(date +%F)"
 ```
+
+> **Note:** The `--platform linux/amd64` flag is required on amd64 systems, but can be ignored on arm64 systems.
 
 ## License
 
