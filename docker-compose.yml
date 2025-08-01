@@ -1,0 +1,7 @@
+services:
+  resume:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    container_name: resume-generator

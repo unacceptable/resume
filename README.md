@@ -1,34 +1,46 @@
-# Robert's Resume
+# Resume Generator
 
-Hey team! I guess if you found this you're interested in how I am generating my
-resume.
+This project generates a professional resume from Markdown source files. The system converts Markdown content to both HTML and PDF formats using Python, CSS styling, and wkhtmltopdf.
 
-The 30k foot overview is that I store my resume as Markdown, then using python
-and some css, render a PDF based on the contents.
+## Getting Started
 
-## Rendering Resume
+### Local Development
 
-### install requirements
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Generate resume:**
+   ```bash
+   python resume.py
+   ```
+
+This will create both `Resume.pdf` and `resume.html` in the current directory.
+
+### Using Docker
+
+#### Docker Compose (Recommended)
 
 ```bash
-pip install -r requirements.txt
+docker compose up --build
 ```
 
-### run render script
+The generated files (`Resume.pdf` and `resume.html`) will be available in your local directory immediately thanks to volume mounting.
+
+#### Docker CLI
 
 ```bash
-python resume.py
-```
-
-### render with Docker
-
-```bash
+# Build the image
 docker build -t resume:local .
-```
 
-```bash
+# Run and extract files
 docker run -it --name "resume-$(date +%F)" resume:local &&
     docker cp "resume-$(date +%F):/app/Resume.pdf" . &&
     docker cp "resume-$(date +%F):/app/resume.html" . &&
     docker rm "resume-$(date +%F)"
 ```
+
+## License
+
+This project is licensed under the GNU General Public License v2.0 - see the [LICENSE](LICENSE) file for details.
