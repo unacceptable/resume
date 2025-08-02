@@ -1,53 +1,74 @@
 #!/usr/bin/env python3
-# pylint: disable=invalid-name
-
 '''
     Render my resume
 '''
 import logging
 import os
+import json
+
 import markdown
 import pdfkit
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 def main():
     '''
-        Does all the things
+    Main Function
     '''
-    md   = get_contents('Resume.md')
-    body = markdown.markdown(md, extensions=['tables'])
-    html = render_html(body=body)
+    files = {
+        'Resume.md': None,
+        'CoverLetter.md': 'CoverLetter.json'
+    }
 
-    create_pdf(contents=html)
+    for file, template_file in files.items():
+        logging.debug('Processing file: %s with %s', file, template_file)
 
-    with open('resume.html', mode='w', encoding='utf-8') as website:
-        logging.info('Creating file %s (for website).', website.name)
-        website.write(html)
+        template_map = None
 
-    website.close()
+        if template_file:
+            with open(template_file, 'r', encoding='utf-8') as f:
+                logging.info('Loading template from %s', template_file)
+                template_map = json.load(f)
+
+        md   = get_contents(filename=file, template=template_map)
+        body = markdown.markdown(md, extensions=['tables'])
+        html = render_html(body=body)
+
+        create_pdf(contents=html, filename=file.replace('.md', '.pdf'))
+
+        html_filename = file.replace('.md', '.html')
+
+        with open(html_filename, mode='w', encoding='utf-8') as website:
+            logging.info('Creating file %s (for website).', website.name)
+            website.write(html)
+
+        website.close()
 
 
-def get_contents(filename):
+def get_contents(filename: str, template: map) -> str:
     '''
-        return file contents
+    Get the contents of a file
     '''
     logging.info('Getting contents for %s', filename)
     with open(filename, mode='r', encoding='utf-8') as f:
         contents = f.read()
     f.close()
 
+    if template:
+        logging.info('Applying template to %s', filename)
+        contents = contents.format(**template)
+
     logging.debug('Contents (for %s): %s', filename, contents)
 
     return contents
 
 
-def render_html(body, head='', css_filename='style.css'):
+def render_html(body: str, head: str = '', css_filename: str = 'style.css') -> str:
     '''
-        Renders HTML
+    Renders HTML
     '''
     logging.info('Rendering HTML')
     css_html = f'<link rel="stylesheet" href="{os.getcwd()}/{css_filename}">'
@@ -67,9 +88,9 @@ def render_html(body, head='', css_filename='style.css'):
     return html
 
 
-def create_pdf(contents, filename='Resume.pdf'):
+def create_pdf(contents: str, filename: str) -> None:
     '''
-        Creates a PDF
+    Creates a PDF from html contents
     '''
     options = {'enable-local-file-access': None}
 
