@@ -11,7 +11,12 @@ This project generates a professional resume from Markdown source files. The sys
    pip install -r requirements.txt
    ```
 
-2. **Generate resume:**
+2. **Copy and update the CoverLetter.json.example**
+   ```bash
+   cp -a CoverLetter.json.example Coverletter.json
+   ```
+
+3. **Generate resume:**
    ```bash
    python resume.py
    ```

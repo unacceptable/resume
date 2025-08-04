@@ -9,7 +9,7 @@
 
 Dear Hiring Manager at **{company}**,
 
-I am writing to express my strong interest in the **{position}** role at **{company}**. With over 8 years of experience in DevOps, Site Reliability Engineering, and cloud architecture, I am excited about the opportunity to contribute to your team's success.
+I am writing to express my strong interest in the **{position}** role at **{company}**. With over a decade of experience in IT with a focus on DevOps, Site Reliability Engineering, and cloud architecture, I am excited about the opportunity to contribute to your team's success.
 
 In my current role as Sr. DevOps Solutions Architect at BackBox, I have demonstrated my ability to design and implement scalable infrastructure solutions from the ground up. I've successfully created Infrastructure as Code strategies, containerized microservices, and built Kubernetes clusters that support critical business operations. My experience designing CI/CD pipelines following DRY modular patterns and creating platform automation for ephemeral sandboxes directly aligns with modern DevOps practices that drive business value.
 
