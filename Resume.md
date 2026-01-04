@@ -8,24 +8,41 @@
 
 ## Certifications
 
-**Kubernetes**:
-[Certified Kubernetes Administrator (CKA)](https://cdn.aztek.io/certs/CKA_Certificate.pdf)<br/>
-**AWS**:
-[AWS Certified Solutions Architect - Professional](https://cdn.aztek.io/certs/awsSolutionsArchitect_PE.pdf),
-[AWS Certified DevOps Engineer - Professional](https://cdn.aztek.io/certs/awsDevOpsEngineer_PE.pdf),
-[AWS Certified Solutions Architect - Associate](https://cdn.aztek.io/certs/awsSolutionsArchitect_AE.pdf),
-[AWS Certified Developer - Associate](https://cdn.aztek.io/certs/awsCertifiedDeveloper_AE.pdf),
-[AWS Certified SysOps Administrator - Associate](https://cdn.aztek.io/certs/awsSysOpsAdmin_AE.pdf)<br/>
-**General**: [Security+](https://cdn.aztek.io/certs/CompTIA_Security%2B.pdf)
+### **Kubernetes**
+* [Certified Kubernetes Administrator (CKA)](https://cdn.aztek.io/certs/CKA_Certificate.pdf)
+
+### **AWS**
+* [AWS Certified Solutions Architect - Professional](https://cdn.aztek.io/certs/awsSolutionsArchitect_PE.pdf)
+* [AWS Certified DevOps Engineer - Professional](https://cdn.aztek.io/certs/awsDevOpsEngineer_PE.pdf)
+* [AWS Certified Solutions Architect - Associate](https://cdn.aztek.io/certs/awsSolutionsArchitect_AE.pdf)
+* [AWS Certified Developer - Associate](https://cdn.aztek.io/certs/awsCertifiedDeveloper_AE.pdf)
+* [AWS Certified SysOps Administrator - Associate](https://cdn.aztek.io/certs/awsSysOpsAdmin_AE.pdf)
+
+### **General**
+* [Security+](https://cdn.aztek.io/certs/CompTIA_Security%2B.pdf)
 
 ## Professional Experience
 
 ### BackBox - Sr. DevOps Solutions Architect - 2023 to present
 
+- Led the effort to obtain BackBox's first SOC2 certification
+- Designed the AI security strategy, evaluating vendor terms of use, SOC2
+  compliance, data security and privacy policies to ensure organizational fit
+- Architected a Vulnerability Intelligence Relay service to build a Data Lake
+  for CVE information, enabling centralized vulnerability tracking and analysis
+- Designed and implemented an AI Agent Swarm using AWS Bedrock that parses CVE
+  data and produces standardized, structured output with enhanced remediation
+  guidance
+- Integrated Retrieval-Augmented Generation (RAG) patterns into the agent
+  architecture for context-aware vulnerability analysis
+- Developed a Grader AI (Sentinel) agent for the CVE remediation stack to evaluate and
+  score remediation quality and completeness
+- Built a proof-of-concept for embedding models to enable AI-powered command
+  search within the BackBox application
+- Designed the Infrastructure as Code (IaC) strategy
 - Create Infrastructure as Code modules from scratch
-- Designed the infrastructure as Code strategy
-- Wrote and containerized python microservices
-- Stood Up BackBox's first Kubernetes clusters
+- Wrote and containerized Python microservices using FastAPI and AWS services like AWS Bedrock
+- Stood up BackBox's first Kubernetes clusters
 - Designed CI/CD pipelines from scratch following a DRY modular pattern
 - Designed platform automation and an API abstraction to stand up isolated
   ephemeral sandboxes for customer trials, QA testing, and SaaS offerings
@@ -59,6 +76,7 @@
 
 ### Koupon - Site Reliability Engineering Manager - 2021 to 2022
 
+- Led the effort to obtain Koupon's first SOC2 certification
 - Created a Status Page for internal and external stakeholders
 - Collaborated with Dev, QA, Security, and Data teams to identify workflow
   bottlenecks using Value Stream Mapping and other methods
@@ -68,7 +86,8 @@
   and introduced team to Infrastructure as Code orchestration with custom
   Terraform modules and Terragrunt
 - Transitioned team to Helm orchestration with Helmfile and from IAM users with
-  access keys to IAM role authentication using KIAM and Cross-Account Roles
+  access keys to IAM role authentication using IRSA (replacing KIAM) and
+  Cross-Account Roles
 
 ### Dell - DevOps Solutions Architect - 2018 to 2021
 
@@ -122,18 +141,15 @@
 
 ### Technical Skills:
 
-**Core DevOps Skills**: Kubernetes, Helm, Ansible, Docker, Terraform, Packer,
-AWS CloudFormation, Security Scanning<br/> **Programming & Scripting**: Python,
-Bash & Shell, PowerShell<br/> **CI/CD Tools**: Jenkins, GitHub Actions, GitLab
-CI, Keptn, Bamboo<br/> **Cross-functional Skills**: Containerization, Security &
-Compliance, API & Webhook Automation, Virtualization, Infrastructure Monitoring
+**Core DevOps Skills**: Kubernetes, Helm, Ansible, Docker, Terraform, Packer, AWS CloudFormation, Security Scanning</br>
+**Programming & Scripting**: Python, Bash & Shell, PowerShell</br>
+**CI/CD Tools**: Jenkins, GitHub Actions, GitLab CI, Keptn, Bamboo</br>
+**Cross-functional Skills**: Containerization, Security & Compliance, API & Webhook Automation, Virtualization, Infrastructure Monitoring
 
 ### Soft Skills:
 
-**Management & Team Building**: Servant Leadership, Communication,
-Collaboration, Conflict Resolution, Coaching<br/> **Problem Solving**:
-Troubleshooting, Debugging, Observability<br/> **Time management**: Kanban,
-Sprints (prefer Scrumban framework), Pomodoro Timers, Priortizing tasks &
-Backlog Refinement<br/> **SCRUM leadership**: Standup, Backlog Refinement,
-Deployment Retrospectives, Blameless Post Mortems<br/> **Business Value**: Cost
-Optimizations
+**Management & Team Building**: Servant Leadership, Communication, Collaboration, Conflict Resolution, Coaching</br>
+**Problem Solving**: Troubleshooting, Debugging, Observability</br>
+**Time management**: Kanban, Sprints (prefer Scrumban framework), Pomodoro Timers, Prioritizing tasks & Backlog Refinement</br>
+**SCRUM leadership**: Standup, Backlog Refinement, Deployment Retrospectives, Blameless Post Mortems</br>
+**Business Value**: Cost Optimizations</br>

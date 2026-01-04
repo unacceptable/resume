@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 '''
-    Render my resume
+Render my resume
 '''
 import logging
 import os
 import json
+from typing import Optional, Dict
 
 import markdown
 import pdfkit
@@ -48,14 +49,14 @@ def main():
         website.close()
 
 
-def get_contents(filename: str, template: map) -> str:
+def get_contents(filename: str, template: Optional[Dict[str, str]]) -> str:
     '''
     Get the contents of a file
     '''
     logging.info('Getting contents for %s', filename)
+
     with open(filename, mode='r', encoding='utf-8') as f:
         contents = f.read()
-    f.close()
 
     if template:
         logging.info('Applying template to %s', filename)
