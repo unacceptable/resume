@@ -1,4 +1,18 @@
+# Generated outputs
 *.zip
 *.pdf
 *.html
+*_ats_report.txt
+
+# User-specific configuration
 CoverLetter.json
+
+# Python
+__pycache__/
+
+# IDE
+.vscode/
+
+# skillNer generated data files
+skill_db_relax_20.json
+token_dist.json
