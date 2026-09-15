@@ -3,8 +3,9 @@
 ## Contact
 
 **Email**: [robert@aztek.io](mailto:robert@aztek.io)<br/>
-**LinkedIn**: [robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/)<br/>
-**GitHub**: [unacceptable](https://github.com/unacceptable)
+**Phone**: [406 396 9048](tel:+14063969048)<br/>
+**LinkedIn**: [linkedin.com/in/robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/)<br/>
+**GitHub**: [github.com/unacceptable](https://github.com/unacceptable)
 
 ## Certifications
 
@@ -21,9 +22,46 @@
 ### **General**
 * [Security+](https://cdn.aztek.io/certs/CompTIA_Security%2B.pdf)
 
+<!--
+## Education
+
+**Software Engineering** | Montana Tech | 2025 | GPA: 3.60
+-->
+
 ## Professional Experience
 
-### BackBox - Sr. DevOps Solutions Architect - 2023 to present
+### Selector ([selector.ai](https://selector.ai))
+**Senior Staff Engineer** | 2026 to present
+
+- Manage several dozen Google Kubernetes Engine (GKE) clusters alongside Rancher
+  Kubernetes Engine (RKE) clusters
+- Saved the organization ~$170k per year through cloud cost optimizations,
+  including removing unused Persistent Volume Claims (PVCs), right-sizing
+  clusters, and decommissioning unused clusters
+- Assist enterprise customers with deploying the Selector stack into their own
+  Kubernetes environments
+- Designed a custom Persistent Volume Claim (PVC) autoscaler for Kubernetes
+  workloads
+- Designed and built AI agents in Python using Gemini 3.8 that detect
+  configuration drift and automatically submit Pull Requests to correct
+  Kubernetes manifests; containerized and deployed the agents onto Kubernetes
+  following least-privilege principles
+- Designed the GKE upgrade procedure and schedule for the cluster fleet
+- Managed GitOps deployments with ArgoCD
+- Helped the team adopt a strangler release pattern built around Kustomize to
+  incrementally migrate deployments
+- Maintained Scripted and Declarative Jenkins Pipelines, fixing bugs as they
+  arose
+- Refactored Infrastructure as Code and led the team's upgrade to the latest
+  version of OpenTofu
+- Corrected existing documentation and authored internal procedures and
+  runbooks
+- Participate in the on-call rotation for production infrastructure
+- Coordinate with distributed teams across US time zones, Europe, South Asia,
+  and East Asia
+
+### BackBox
+**Senior DevOps Solutions Architect** | 2023 to 2026
 
 - Led the effort to obtain BackBox's first SOC2 certification
 - Designed the AI security strategy, evaluating vendor terms of use, SOC2
@@ -55,8 +93,10 @@
   AI services with DataDog's LLMObs and creating alerts based on application logs
 - Configured PagerDuty for on-call incident management and alerting
 
-### PDI Technologies - Site Reliability Engineering Manager - 2022 to 2023
+### Koupon (a PDI Technologies company)
+**Site Reliability Engineering Manager** | 2021 to 2023
 
+- Led the effort to obtain Koupon's first SOC2 certification
 - Led team during Koupon's acquisition by PDI, ensuring team members have
   necessary resources
 - Represented team members and addressed concerns, implementing Servant
@@ -89,10 +129,6 @@
 - Implemented PagerDuty for incident response
 - Initiated migration of GCP Terraform infrastructure to my team's established
   Terragrunt pattern
-
-### Koupon - Site Reliability Engineering Manager - 2021 to 2022
-
-- Led the effort to obtain Koupon's first SOC2 certification
 - Created a Status Page for internal and external stakeholders
 - Collaborated with Dev, QA, Security, and Data teams to identify workflow
   bottlenecks using Value Stream Mapping and other methods
@@ -114,7 +150,8 @@
 - Configured PagerDuty for incident management (migrating from an in-house solution
   developed with Twilio)
 
-### Dell - DevOps Solutions Architect - 2018 to 2021
+### Dell
+**DevOps Solutions Architect** | 2018 to 2021
 
 - Served as Team Lead for Dell's Insights Platform SRE team, driving success and
   performance in a DevOps environment
@@ -142,7 +179,8 @@
 - Managed secrets with HashiCorp Vault, AWS Secrets Manager, and AWS SSM
   Parameter Store
 
-### Alkami - Site Reliability Engineer - 2017 to 2018
+### Alkami
+**Site Reliability Engineer** | 2017 to 2018
 
 - Facilitated private cloud migrations from ARMOR Gen3 to ARMOR Gen4
 - Developed a custom CLI tool utilizing the ARMOR API, implemented in Python
@@ -159,7 +197,8 @@
 - Managed MSSQL databases and Redis caching
 - Used PagerDuty for on-call incident response
 
-### ARMOR (Firehost) - Site Reliability Engineer - 2015 to 2017
+### ARMOR (Firehost)
+**Site Reliability Engineer** | 2015 to 2017
 
 - Provided guidance on best security practices for AWS services configuration,
   supporting ARMOR Anywhere infrastructure
@@ -182,18 +221,19 @@
 
 ### Technical Skills:
 
-**Core DevOps Skills**: Kubernetes, Helm, Ansible, Docker, Terraform, Packer, AWS CloudFormation, Security Scanning, Git</br>
+**Core DevOps Skills**: Kubernetes (GKE, EKS, AKS, RKE), Helm, Kustomize, Ansible, Docker, OpenTofu, Terraform, Terragrunt, Packer, AWS CloudFormation, Security Scanning, Git</br>
 **Cloud Platforms**: AWS, Azure, GCP</br>
-**Programming & Scripting**: Python, Bash & Shell, PowerShell</br>
+**Programming & Scripting**: Python, C++, Bash & Shell, PowerShell</br>
 **CI/CD Tools**: Jenkins, GitHub Actions, GitLab CI, ArgoCD, Keptn, Bamboo</br>
-**Databases**: PostgreSQL, MySQL, MariaDB, MSSQL, DynamoDB, CosmosDB</br>
+**Databases**: PostgreSQL, MySQL, MariaDB, MSSQL, DynamoDB, CosmosDB, Entity Relationship Diagrams</br>
 **Message Queues & Caching**: RabbitMQ, AWS SQS, Azure Queue Storage, Redis</br>
 **Secrets Management**: HashiCorp Vault, AWS Secrets Manager, AWS SSM Parameter Store</br>
 **Observability**: DataDog, Grafana, New Relic, Sumo Logic, Splunk</br>
 **Incident Management**: PagerDuty</br>
 **Networking**: VPCs, Load Balancers, DNS, CDNs</br>
 **Operating Systems**: Linux, Windows Server</br>
-**Cross-functional Skills**: Containerization, Security & Compliance, API & Webhook Automation, Virtualization, Infrastructure Monitoring
+**AI & LLM Platforms**: AWS Bedrock, Google Gemini, Retrieval-Augmented Generation (RAG), AI Agents</br>
+**Cross-functional Skills**: Containerization, Security & Compliance, API & Webhook Automation, AI Agents & Automation, Virtualization, Infrastructure Monitoring
 
 ### Soft Skills:
 
@@ -201,4 +241,5 @@
 **Problem-Solving**: Troubleshooting, Debugging, Observability</br>
 **Time management**: Kanban, Sprints (prefer Scrumban framework), Pomodoro Timers, Prioritizing tasks & Backlog Refinement</br>
 **SCRUM leadership**: Standup, Backlog Refinement, Deployment Retrospectives, Blameless Postmortems</br>
-**Business Value**: Cost Optimizations</br>
+**Business Value**: Cloud Cost Optimizations, Enterprise Customer Enablement</br>
+**Global Collaboration**: Distributed teams across US, Europe, South Asia, and East Asia time zones</br>
