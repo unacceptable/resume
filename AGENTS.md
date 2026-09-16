@@ -92,6 +92,21 @@ The ATS scanning process typically takes 60-90 seconds due to:
 
 ---
 
+## Git Workflow
+
+**IMPORTANT FOR AI AGENTS**: Never commit directly to `main`. All changes must be reviewed before they land on `main`.
+
+When asked to commit or push changes:
+1. Create a feature branch from `main` (e.g., `git checkout -b <short-description>`)
+2. Commit the changes on that branch
+3. Push the branch to `origin`
+4. Open a Pull Request against `main` (e.g., `gh pr create --base main`)
+5. Report the PR URL; do not merge it
+
+Do not force-push to `main` or rewrite its history.
+
+---
+
 ## Project Structure
 
 ```
