@@ -19,15 +19,38 @@ This generates:
 
 ## ATS Scanning Feature
 
-The project now includes automated ATS (Applicant Tracking System) compatibility scanning using open-source NLP tools. After generating your resume PDF, the system automatically analyzes it for:
+### Design Philosophy
+
+**IMPORTANT FOR AI AGENTS**: The ATS scanning system is designed for **feedback and analysis**, NOT for automatically fixing the resume. The purpose is to provide insight into what different ATS systems and recruiters see when the resume is submitted.
+
+**Key Design Principles:**
+1. **Multiple ATS Implementations**: Support multiple ATS scanning engines to compare how different systems parse the resume
+2. **Feedback-Oriented**: Generate detailed reports showing what each ATS system extracts
+3. **Comparative Analysis**: Allow comparison between different ATS approaches (NLP-based, regex-based, ML-based)
+4. **No Auto-Fix**: Do NOT implement automatic resume modifications - only provide recommendations
+5. **Recruiter Perspective**: Help understand what recruiters see when they review ATS-parsed resumes
+
+The goal is to answer: "What do recruiters see when I submit my resume to their ATS?"
+
+### Current Implementation
+
+The project includes automated ATS (Applicant Tracking System) compatibility scanning using open-source NLP tools. After generating your resume PDF, the system automatically analyzes it for:
 
 - **Text extraction quality** - Ensures ATS systems can read your content
 - **Contact information detection** - Verifies email, phone, LinkedIn, GitHub are parseable
-- **Skills extraction** - Identifies technical skills and competencies
+- **Skills extraction** - Identifies technical skills and competencies (both explicit and NLP-detected)
 - **Job title recognition** - Confirms experience section is properly formatted
 - **Education parsing** - Validates degree information is detectable
 - **Formatting issues** - Detects special characters, tables, or layouts that may confuse ATS
 - **Overall compatibility score** - 0-100 score with specific recommendations
+
+### Future ATS Implementations
+
+To add more ATS scanning engines for comparative analysis:
+1. Create new scanner classes in `ats_scanner.py` implementing the same interface
+2. Each scanner should produce a standardized report format
+3. Compare results across multiple scanners to see parsing differences
+4. Examples: rule-based parser, ML-based extraction, commercial ATS simulation
 
 ### ATS Scanning Usage
 
@@ -55,21 +78,47 @@ docker compose run resume python3 ats_scanner.py Resume.pdf
 
 The ATS report (`Resume_ats_report.txt`) includes:
 
-1. **ATS Compatibility Score** (0-100):
+1. **Scanner Type** - Identifies which ATS implementation was used (e.g., "NLP-Based (skillNer + spaCy)")
+
+2. **ATS Compatibility Score** (0-100):
    - 80-100: Excellent - Highly ATS-compatible
    - 60-79: Good - Minor improvements recommended
    - 40-59: Fair - Some issues to address
    - 0-39: Needs improvement - Significant compatibility issues
 
-2. **Contact Information** - Validates all contact details are parseable
+3. **Contact Information** - Validates all contact details are parseable
 
-3. **Skills Extracted** - Lists technical skills the ATS identified
+4. **Skills Extracted** - Lists technical skills the ATS identified
+   - Explicit skills from Skills section
+   - NLP-detected skills from text
 
-4. **Job Titles & Experience** - Shows detected job titles and roles
+5. **Job Titles & Experience** - Shows detected job titles and roles
 
-5. **Education** - Displays recognized degrees and qualifications
+6. **Education** - Shows what this scanner can detect:
+   - **NLP-Based Scanner**: Can detect universities (ORG entities) and dates, but CANNOT extract degree names
+   - Reports honestly about its limitations
+   - Different ATS implementations will have different capabilities
 
-6. **Recommendations** - Specific suggestions to improve ATS compatibility
+7. **Recommendations** - Specific suggestions based on what this scanner can detect
+
+### Scanner Fidelity
+
+**IMPORTANT**: Each scanner implementation only reports what it can **actually** detect using its underlying technology. This ensures you see what real ATS systems with similar approaches would extract.
+
+**Current NLP-Based Scanner** (skillNer + spaCy) can detect:
+- ✓ Contact information (regex patterns)
+- ✓ Explicit skills from Skills section (regex parsing)
+- ✓ Additional skills via NLP (skillNer)
+- ✓ Job titles (regex patterns)
+- ✓ Universities (spaCy ORG entity recognition)
+- ✓ Dates (spaCy DATE entity recognition)
+
+**Current NLP-Based Scanner CANNOT detect**:
+- ✗ Degree names (Bachelor, Master, Ph.D.) - spaCy has no education entity types
+- ✗ Fields of study - requires specialized parser
+- ✗ GPA or honors - requires specialized parser
+
+Future scanner implementations (rule-based, ML-based, commercial ATS simulators) will have different capabilities and limitations, allowing you to compare what different systems see.
 
 ### Performance Considerations
 
