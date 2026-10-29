@@ -24,7 +24,7 @@ def main():
     '''
     # Check for command line arguments
     run_ats_only = '--ats-only' in sys.argv
-    skip_ats = '--skip-ats' in sys.argv
+    run_ats = '--run-ats' in sys.argv
 
     files = {
         'Resume.md': None,
@@ -68,7 +68,7 @@ def main():
         website.close()
 
         # Run ATS scan on the generated resume PDF
-        if not skip_ats and file == 'Resume.md':
+        if run_ats and file == 'Resume.md':
             run_ats_scan(pdf_filename)
 
 
