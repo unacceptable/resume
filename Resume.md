@@ -7,20 +7,20 @@
 **LinkedIn**: [linkedin.com/in/robert-jackson-ii](https://www.linkedin.com/in/robert-jackson-ii/)<br/>
 **GitHub**: [github.com/unacceptable](https://github.com/unacceptable)
 
+## Summary
+
+Platform Engineering and SRE leader with 11+ years driving DevOps
+transformations and application modernization across a Fortune 500 enterprise
+(Dell), a unicorn startup (Calm), and smaller startups. Led SRE teams at Dell and Koupon, managing
+Koupon's team through its acquisition by PDI Technologies. Took two companies
+through their first SOC2 certification and delivered $1.8M+ in annualized cloud
+savings across Kubernetes platforms on AWS, GCP, and Azure.
+
 ## Certifications
 
-### **Kubernetes**
-* [Certified Kubernetes Administrator (CKA)](https://cdn.aztek.io/certs/CKA_Certificate.pdf)
-
-### **AWS**
-* [AWS Certified Solutions Architect - Professional](https://cdn.aztek.io/certs/awsSolutionsArchitect_PE.pdf)
-* [AWS Certified DevOps Engineer - Professional](https://cdn.aztek.io/certs/awsDevOpsEngineer_PE.pdf)
-* [AWS Certified Solutions Architect - Associate](https://cdn.aztek.io/certs/awsSolutionsArchitect_AE.pdf)
-* [AWS Certified Developer - Associate](https://cdn.aztek.io/certs/awsCertifiedDeveloper_AE.pdf)
-* [AWS Certified SysOps Administrator - Associate](https://cdn.aztek.io/certs/awsSysOpsAdmin_AE.pdf)
-
-### **General**
-* [Security+](https://cdn.aztek.io/certs/CompTIA_Security%2B.pdf)
+**Kubernetes**: [Certified Kubernetes Administrator (CKA)](https://cdn.aztek.io/certs/CKA_Certificate.pdf)<br/>
+**AWS**: [Solutions Architect - Professional](https://cdn.aztek.io/certs/awsSolutionsArchitect_PE.pdf), [DevOps Engineer - Professional](https://cdn.aztek.io/certs/awsDevOpsEngineer_PE.pdf), [Solutions Architect - Associate](https://cdn.aztek.io/certs/awsSolutionsArchitect_AE.pdf), [Developer - Associate](https://cdn.aztek.io/certs/awsCertifiedDeveloper_AE.pdf), [SysOps Administrator - Associate](https://cdn.aztek.io/certs/awsSysOpsAdmin_AE.pdf)<br/>
+**General**: [CompTIA Security+](https://cdn.aztek.io/certs/CompTIA_Security%2B.pdf)
 
 <!--
 ## Education
@@ -33,213 +33,116 @@
 ### Selector ([selector.ai](https://selector.ai))
 **Senior Staff Engineer** | 2026 to present
 
-- Manage several dozen Google Kubernetes Engine (GKE) clusters alongside Rancher
-  Kubernetes Engine (RKE) clusters
-- Saved the organization ~$170k per year through cloud cost optimizations,
-  including removing unused Persistent Volume Claims (PVCs), right-sizing
-  clusters, and decommissioning unused clusters
-- Assist enterprise customers with deploying the Selector stack into their own
-  Kubernetes environments
-- Designed a custom Persistent Volume Claim (PVC) autoscaler for Kubernetes
-  workloads
-- Designed and built AI agents in Python using Gemini 3.8 that detect
-  configuration drift and automatically submit Pull Requests to correct
-  Kubernetes manifests; containerized and deployed the agents onto Kubernetes
-  following least-privilege principles
-- Designed the GKE upgrade procedure and schedule for the cluster fleet
-- Managed GitOps deployments with ArgoCD
-- Helped the team adopt a strangler release pattern built around Kustomize to
-  incrementally migrate deployments
-- Maintained Scripted and Declarative Jenkins Pipelines, fixing bugs as they
-  arose
+- Own the reliability and lifecycle of a large fleet of Google Kubernetes Engine
+  (GKE) and Rancher Kubernetes Engine (RKE) clusters; authored the fleet
+  patching policy and GKE upgrade schedule
+- Saved ~$170k per year through cloud cost optimizations (unused PVC cleanup,
+  right-sizing, decommissioning clusters) and a custom PVC autoscaler
+- Built Python AI agents using Gemini 4 Argon that detect configuration drift and
+  submit Pull Requests to correct Kubernetes manifests, deployed with
+  least-privilege principles
+- Guide enterprise customers through deploying the Selector stack into their
+  own Kubernetes environments
+- Designed a strangler release pattern for incrementally migrating Kustomize
+  deployments to Helm under ArgoCD GitOps, and implemented it in my own
+  microservices
 - Refactored Infrastructure as Code and led the team's upgrade to the latest
-  version of OpenTofu
-- Corrected existing documentation and authored internal procedures and
-  runbooks
-- Participate in the on-call rotation for production infrastructure
-- Coordinate with distributed teams across US time zones, Europe, South Asia,
+  OpenTofu
+- On-call for production; coordinate with teams across US, Europe, South Asia,
   and East Asia
 
-### BackBox
+### BackBox ([backbox.com](https://backbox.com))
 **Senior DevOps Solutions Architect** | 2023 to 2026
 
-- Led the effort to obtain BackBox's first SOC2 certification
-- Designed the AI security strategy, evaluating vendor terms of use, SOC2
-  compliance, data security and privacy policies to ensure organizational fit
-- Architected a Vulnerability Intelligence Relay service to build a Data Lake
-  for CVE information, enabling centralized vulnerability tracking and analysis
-- Designed and implemented an AI Agent Swarm using AWS Bedrock that parses CVE
-  data and produces standardized, structured output with enhanced remediation
-  guidance
-- Integrated Retrieval-Augmented Generation (RAG) patterns into the agent
-  architecture for context-aware vulnerability analysis
-- Developed a Grader AI (Sentinel) agent for the CVE remediation stack to evaluate and
-  score remediation quality and completeness
-- Built a proof-of-concept for embedding models to enable AI-powered command
-  search within the BackBox application
-- Designed the Infrastructure as Code (IaC) strategy
-- Created Infrastructure as Code modules from scratch
-- Wrote and containerized Python microservices using FastAPI and AWS services like AWS Bedrock
-- Stood up BackBox's first Kubernetes clusters
-- Designed CI/CD pipelines from scratch following a DRY modular pattern
-- Designed platform automation and an API abstraction to stand up isolated
-  ephemeral sandboxes for customer trials, QA testing, and SaaS offerings
-- Coordinated with marketing on customer sandbox trials
-- Oversaw the migration from Terraform to OpenTofu
-- Managed PostgreSQL, MariaDB, and AWS DynamoDB databases
-- Utilized RabbitMQ for message queuing and AWS SSM Parameter Store for secrets
-  management
-- Implemented observability using Grafana and DataDog, including instrumenting
-  AI services with DataDog's LLMObs and creating alerts based on application logs
-- Configured PagerDuty for on-call incident management and alerting
+- Built BackBox's cloud platform from the ground up: the Infrastructure as Code
+  strategy and modules, modular CI/CD pipelines, and the company's first
+  Kubernetes clusters; led the Terraform to OpenTofu migration
+- Led BackBox's first SOC2 certification and designed the AI security strategy
+  (vendor terms of use, data security, and privacy review)
+- Architected a Vulnerability Intelligence Relay (CVE data lake) and an AI
+  Agent Swarm on AWS Bedrock with RAG that produces structured remediation
+  guidance, plus a Grader agent (Sentinel) to score remediation quality
+- Built automation and an API abstraction for isolated ephemeral sandboxes used
+  for customer trials, QA, and SaaS offerings
+- Containerized FastAPI microservices; implemented Grafana and DataDog
+  observability, including LLMObs for AI services, and PagerDuty alerting
 
-### Koupon (a PDI Technologies company)
+### Koupon, a PDI Technologies company ([koupon.com](https://koupon.com))
 **Site Reliability Engineering Manager** | 2021 to 2023
 
-- Led the effort to obtain Koupon's first SOC2 certification
-- Led team during Koupon's acquisition by PDI, ensuring team members have
-  necessary resources
-- Represented team members and addressed concerns, implementing Servant
-  Leadership principles
-- Championed quality of life improvements and improved team morale through
-  proper work allocation, pair programming, and listening to individual needs
-- Led regular SCRUM meetings (Morning Standups, Backlog Refinements,
-  Retrospectives)
-- Facilitated 1-on-1 conversations with team members and other leaders to align
-  with customer needs
-- Advocated for important work initiatives to senior leadership, such as
-  addressing tech debt and other Non-Functional Requirements
-- Ensured delivery of critical business items, including releases, application
-  uptime, and overall stability
-- Consulted with multiple engineering teams across the organization on action
-  items to modernize various app stacks
-- Migrated observability platform from Sumo Logic to DataDog, improving
-  monitoring capabilities and reducing costs
-- Procured various tooling for team needs (DataDog, Udemy, misc. software
-  licenses, etc.)
-- Reduced cloud spending by ~$36.7k per month through various optimization
-  strategies
-- Oversaw infrastructure accounting for 25% of total revenue with only 5% of the
-  organization's total cloud spending
-- Led the migration of MySQL database from AWS EC2 to an updated MariaDB version
-  on AWS RDS
-- Managed MSSQL, PostgreSQL, and MySQL/MariaDB databases with RabbitMQ message
-  queuing and Redis caching
-- Utilized AWS SSM Parameter Store for secrets management
-- Implemented PagerDuty for incident response
-- Initiated migration of GCP Terraform infrastructure to my team's established
-  Terragrunt pattern
-- Created a Status Page for internal and external stakeholders
-- Collaborated with Dev, QA, Security, and Data teams to identify workflow
-  bottlenecks using Value Stream Mapping and other methods
-- Containerized legacy monitoring scripts, managed Sumo Logic observability
-  platform, and implemented security scanning initiatives for Docker containers,
-  Kubernetes, and cloud provider
-- Instrumented application code with StatsD for metrics collection and
-  performance monitoring
-- Established CI/CD tooling in Kubernetes, wrote Helm charts for business needs,
-  and introduced team to Infrastructure as Code orchestration with custom
-  Terraform modules and Terragrunt
-- Transitioned team to Helm orchestration with Helmfile and from IAM users with
-  access keys to IAM role authentication using IRSA (replacing KIAM) and
-  Cross-Account Roles
-- Oversaw cost optimization of AWS Redshift RA3 instances and improved data
-  ingestion using COPY commands from S3
-- Managed RabbitMQ message queuing and Redis caching
-- Implemented AWS SSM Parameter Store for secrets
-- Configured PagerDuty for incident management (migrating from an in-house solution
-  developed with Twilio)
+- Managed an SRE team of 4 across the US and India using Servant Leadership
+- Led the team through Koupon's acquisition by PDI Technologies and retained
+  every team member through the transition by representing their concerns to
+  leadership and securing the resources they needed
+- Led Koupon's DevOps transformation: introduced Infrastructure as Code (custom
+  Terraform modules, Terragrunt), Helm and Helmfile, and CI/CD tooling on
+  Kubernetes, and replaced IAM access keys with IRSA and Cross-Account Roles
+- Advised engineering teams across the organization on modernizing their app
+  stacks, and won senior leadership support for tech debt and other
+  Non-Functional Requirements
+- Used Value Stream Mapping with Dev, QA, Security, and Data teams to find and
+  remove workflow bottlenecks
+- Consolidated 10 EKS clusters into 4 and cut cloud spending by ~$440k per year
+  (Reserved Instances, Savings Plans, S3 optimizations, EC2 to EKS migrations);
+  ran infrastructure supporting 25% of revenue on 5% of cloud spend
+- Defined the 99.99% SLO and 99.9% SLA, led Koupon's first SOC2 certification,
+  and launched a Status Page for internal and external stakeholders
+- Migrated observability from Sumo Logic to DataDog, MySQL on EC2 to MariaDB on
+  RDS, and in-house Twilio alerting to PagerDuty
 
-### Dell
+### Dell ([dell.com](https://www.dell.com))
 **DevOps Solutions Architect** | 2018 to 2021
 
-- Served as Team Lead for Dell's Insights Platform SRE team, driving success and
-  performance in a DevOps environment
-- Developed cloud-agnostic solutions using Kubernetes, Helm, and Infrastructure
-  as Code with Terraform and CloudFormation
-- Integrated SecOps patterns, such as container scanning with Trivy, into CI
-  pipelines for enhanced security and compliance
-- Guided numerous teams to adopt DevOps patterns using strategies from DevOps
-  literature and industry-leading technologies
-- Implemented ChatOps integrations for development teams, automating
-  communication and collaboration
-- Authored CI/CD pipelines for microservices, handling code compilation,
-  artifact pushing, and version tagging
-- Conducted cost analyses and provided optimization recommendations, resulting
-  in significant savings
-- Instrumented microservices with StatsD for custom metrics and application
-  performance insights
-- Enhanced infrastructure stability through monitoring with DataDog and Grafana,
-  implementing anomaly detection and service hotfixes
-- Participated in EKS to AKS migration as the organization transitioned from AWS
-  to Azure for business relationship reasons
-- Migrated PostgreSQL on AWS RDS to Azure CosmosDB and from AWS SQS to Azure Queue
-  Storage and utilized Redis for caching
-- Implemented GitOps workflows using ArgoCD and Keptn for continuous delivery
-- Managed secrets with HashiCorp Vault, AWS Secrets Manager, and AWS SSM
-  Parameter Store
+- Team Lead for the SRE team managing infrastructure for 86 organizations;
+  primary owner of the Dell Data Security Platform (DDSP), Insights Platform,
+  and Remediation Platform
+- Modernized those platforms from individual EC2 servers to containers on ECS
+  and then to Kubernetes; managed dozens of EKS clusters and helped migrate
+  them to AKS
+- Saved ~$1M per year by right-sizing Elasticsearch clusters and databases,
+  consolidating workloads, and setting Kubernetes resource requests and limits
+- Converted manually provisioned infrastructure to CloudFormation, then
+  migrated it to Terraform using a strangler release pattern
+- Guided numerous development teams in adopting DevOps patterns: microservice
+  CI/CD pipelines, GitOps with ArgoCD and Keptn, ChatOps, and container
+  scanning with Trivy
+- Built monitoring with DataDog, Prometheus, and Grafana, and secrets
+  management with HashiCorp Vault
+- Contributed upstream to open source projects, including Keptn, Helm charts,
+  the NGINX Ingress Controller, and HashiCorp Terraform providers
 
-### Alkami
+### Calm ([calm.com](https://www.calm.com))
+**DevOps Consultant (Contract)** | 2019 to 2020
+
+- Managed multiple Kubernetes clusters and Infrastructure as Code with
+  Terraform and Terragrunt
+- Designed ephemeral development environments that gave each commit its own
+  URL, letting developers test microservices against the core dev stack
+- Onboarded new microservices and helped developers optimize builds, cutting a
+  6-minute Docker build in half through layer caching and Dockerfile reordering
+- Deployed Apache Airflow and Jupyter on Kubernetes with hand-written Helm
+  charts
+
+### Alkami ([alkami.com](https://www.alkami.com))
 **Site Reliability Engineer** | 2017 to 2018
 
-- Facilitated private cloud migrations from ARMOR Gen3 to ARMOR Gen4
-- Developed a custom CLI tool utilizing the ARMOR API, implemented in Python
-- Authored Ansible automation playbooks for Windows Server to deploy banking
-  applications across multiple cloud platforms
-- Regularly deployed custom .NET applications to Windows Server Core
-- Designed and maintained Chocolatey deployment packages for internal use
-- Established a continuous delivery pipeline using Team City and Ansible
-- Set up an AWS Lambda deployment pipeline with an Amazon Linux Docker image and
-  Terraform
-- Implemented application performance monitoring using New Relic
-- Integrated webhooks to notify Slack channels of changes in JIRA (prior to the
-  official server plugin) and Datadog
-- Managed MSSQL databases and Redis caching
-- Used PagerDuty for on-call incident response
+- Built a Python CLI on the ARMOR API, Ansible playbooks for Windows Server, and
+  a TeamCity and Ansible delivery pipeline for .NET banking applications
 
-### ARMOR (Firehost)
+### ARMOR, formerly Firehost ([armor.com](https://www.armor.com))
 **Site Reliability Engineer** | 2015 to 2017
 
-- Provided guidance on best security practices for AWS services configuration,
-  supporting ARMOR Anywhere infrastructure
-- Reconstructed and migrated data for multiple internal application stacks,
-  including Atlassian Jira, Jira Helpdesk, Confluence, and Grafana
-- Authored security-focused software automation playbooks using Ansible and
-  Infrastructure as Code with Terraform
-- Enhanced infrastructure stability through monitoring with New Relic, DataDog,
-  and Splunk, implementing anomaly detection and service hotfixes
-- Recommended cost-reduction strategies, resulting in ~$15.7k+ monthly savings
-  (ELK stack optimizations and Reserved Instances)
-- Developed AWS Lambda functions for automated reporting, infrastructure
-  monitoring, and alert generation using the Python boto3 library
-- Managed MySQL, MSSQL, and MariaDB databases with RabbitMQ for message queuing
-  and Redis for caching
-- Utilized AWS SSM Parameter Store for secrets management
-- Used PagerDuty for on-call incident response
+- Authored security-focused Ansible and Terraform automation, AWS Lambda
+  (Python/boto3) reporting, and cost reductions of ~$188k per year
 
 ## Skills
 
-### Technical Skills:
-
-**Core DevOps Skills**: Kubernetes (GKE, EKS, AKS, RKE), Helm, Kustomize, Ansible, Docker, OpenTofu, Terraform, Terragrunt, Packer, AWS CloudFormation, Security Scanning, Git</br>
-**Cloud Platforms**: AWS, Azure, GCP</br>
-**Programming & Scripting**: Python, C++, Bash & Shell, PowerShell</br>
-**CI/CD Tools**: Jenkins, GitHub Actions, GitLab CI, ArgoCD, Keptn, Bamboo</br>
-**Databases**: PostgreSQL, MySQL, MariaDB, MSSQL, DynamoDB, CosmosDB, Entity Relationship Diagrams</br>
-**Message Queues & Caching**: RabbitMQ, AWS SQS, Azure Queue Storage, Redis</br>
-**Secrets Management**: HashiCorp Vault, AWS Secrets Manager, AWS SSM Parameter Store</br>
-**Observability**: DataDog, Grafana, New Relic, Sumo Logic, Splunk</br>
-**Incident Management**: PagerDuty</br>
-**Networking**: VPCs, Load Balancers, DNS, CDNs</br>
-**Operating Systems**: Linux, Windows Server</br>
-**AI & LLM Platforms**: AWS Bedrock, Google Gemini, Retrieval-Augmented Generation (RAG), AI Agents</br>
-**Cross-functional Skills**: Containerization, Security & Compliance, API & Webhook Automation, AI Agents & Automation, Virtualization, Infrastructure Monitoring
-
-### Soft Skills:
-
-**Management & Team Building**: Servant Leadership, Communication, Collaboration, Conflict Resolution, Coaching</br>
-**Problem-Solving**: Troubleshooting, Debugging, Observability</br>
-**Time management**: Kanban, Sprints (prefer Scrumban framework), Pomodoro Timers, Prioritizing tasks & Backlog Refinement</br>
-**SCRUM leadership**: Standup, Backlog Refinement, Deployment Retrospectives, Blameless Postmortems</br>
-**Business Value**: Cloud Cost Optimizations, Enterprise Customer Enablement</br>
-**Global Collaboration**: Distributed teams across US, Europe, South Asia, and East Asia time zones</br>
+**Leadership**: DevOps Transformation, Application Modernization, Servant Leadership, Coaching, Value Stream Mapping, SCRUM, Blameless Postmortems, Cloud Cost Optimization (FinOps), SOC2 Compliance<br/>
+**Core DevOps Skills**: Kubernetes (GKE, EKS, AKS, RKE), AWS ECS, Helm, Kustomize, Ansible, Docker, OpenTofu, Terraform, Terragrunt, Packer, AWS CloudFormation, Istio, Open Policy Agent (OPA), Git<br/>
+**Cloud Platforms**: AWS, Azure, GCP<br/>
+**Programming & Scripting**: Python, C++, Bash & Shell, PowerShell<br/>
+**CI/CD Tools**: Jenkins, GitHub Actions, GitLab CI, ArgoCD, Keptn, Bamboo<br/>
+**Databases & Messaging**: PostgreSQL, MySQL, MariaDB, MSSQL, DynamoDB, CosmosDB, Elasticsearch, RabbitMQ, Redis<br/>
+**Secrets Management**: HashiCorp Vault, OpenBao, AWS Secrets Manager, AWS SSM Parameter Store<br/>
+**Observability**: SLO/SLI, DataDog, OpenTelemetry, Prometheus, Grafana, New Relic, Sumo Logic, Splunk, PagerDuty<br/>
+**AI & LLM Platforms**: AWS Bedrock, Google Gemini 4 Argon, Retrieval-Augmented Generation (RAG), AI Agents
